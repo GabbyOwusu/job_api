@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: job-api
+    env: python
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: cd src && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_NAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: DATABASE_HOST
+        sync: false
+      - key: DATABASE_PORT
+        sync: false
+      - key: ACCESS_TOKEN_SECRET_KEY
+        sync: false
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        sync: false
+      - key: ACCESS_TOKEN_ALGORITHM
+        sync: false
