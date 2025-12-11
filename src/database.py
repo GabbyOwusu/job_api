@@ -13,7 +13,7 @@ DB_HOST = os.getenv("DATABASE_HOST")
 DB_PORT = os.getenv("DATABASE_PORT")
 
 DATABASE_URL = (
-    f"postgresql://postgres:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    f"postgresql+psycopg://postgres:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 )
 
 
