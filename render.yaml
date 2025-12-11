@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: job-api
+    runtime: python
+    plan: free
+    buildCommand: chmod +x src/build.sh && src/build.sh
+    startCommand: cd src && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
