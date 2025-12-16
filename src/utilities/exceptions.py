@@ -64,3 +64,9 @@ class EntityAlreadyExists(Exception):
     """
     Throw an exception when the data already exist in the database.
     """
+
+
+class InvalidCredentials(Exception):
+    """
+   Throw an exception when the data is invalid.
+   """
