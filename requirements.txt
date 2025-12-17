@@ -1,20 +1,19 @@
 # Web Framework
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
+fastapi==0.120.1
+uvicorn==0.38.0
 
 # Database
-sqlalchemy==2.0.23
+sqlalchemy==2.0.44
 psycopg2-binary==2.9.9
-alembic==1.12.1
+alembic==1.17.2
 
 # Authentication & Security
-python-jose[cryptography]==3.3.0
-bcrypt==4.0.1
+python-jose==3.5.0
+bcrypt==5.0.0
 
 # Environment & Configuration
-python-dotenv==1.0.0
+python-dotenv==1.2.1
 
 # Data Validation (included with FastAPI but specifying for clarity)
-pydantic==2.5.0
-pydantic[email]==2.5.0
+pydantic==2.12.3 
 
