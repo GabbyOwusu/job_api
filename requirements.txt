@@ -16,4 +16,4 @@ python-dotenv==1.2.1
 
 # Data Validation (included with FastAPI but specifying for clarity)
 pydantic==2.12.3 
-pydantic[email]==2.12.5
+pydantic[email]==2.12.3
